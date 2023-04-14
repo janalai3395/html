@@ -48,3 +48,49 @@ a {    /*nav a   or    nav ul li a*/
     text-decoration: none;
     color : snow;
 }
+section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;  /*영역 가운데 정렬*/
+    border: 5px solid #333; /*밑에 3줄을 하나로 합친것*/
+    /* border-width: ;
+    border-style: ;
+    border-color: ; */
+    padding: 5px; /*안쪽 간격*/
+}
+h2{
+    font-size: 1.8em;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 3px rgb(198,198,198)
+}
+h3{
+    font-size:15;
+}
+p{
+    font-size:15px;
+    line-height: 30px;
+    margin: 20px;
+}
+dl{
+    line-height: 30px;
+    padding-left: 30px;
+    margin-right: 30px;
+}
+dt{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: dimgrey;
+}
+p > ul{
+    line-height: 30px;
+}
+footer p{
+    margin-left: auto;
+    margin-right: auto; /*가운데 정렬*/
+    width: 80%; /*80퍼센트로 동일한크기 지정*/
+    background-color: #333; /*배경색*/
+    padding: 10px; /*안쪽 여백10*/
+    color: whitesmoke; /*글자 색*/
+    text-align: center; /*글자 가운데 정렬*/
+}
