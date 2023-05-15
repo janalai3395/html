@@ -1,0 +1,77 @@
+body {
+    font-family: "맑은 고딕","고딕","굴림";
+}
+header{
+    background-color: goldenrod;
+    width: 80%;
+    margin-left: auto; /*글자가 아닐떄는 이렇게 가운데 정렬*/
+    margin-right: auto;
+    padding: 10px;
+    height: 80px;
+
+}
+header h1{
+    float: left;
+    color: antiquewhite;
+    padding-left: 20px;
+}
+header nav{
+    float: right;
+    padding-top: 20px;
+}
+nav ul{
+    list-style: none; /*앞에 점 없애기*/
+}
+nav li{
+    display: inline;
+    margin: 15px;
+}
+nav a{
+    color: antiquewhite;
+    text-decoration: none; /*밑줄 없애기*/
+}
+article {
+    clear:both;
+    width: 80%;
+    margin-left: auto; /*글자가 아닐떄는 이렇게 가운데 정렬*/
+    margin-right: auto;
+    border: 5px solid burlywood;
+    padding: 5px;
+}
+section {
+    columns: 3;
+    column-rule: 1px dotted darkorange;
+    padding: 10px;
+}
+section h3{
+    break-before: column;
+    padding-left: 15px;
+}
+section dt{
+    padding-left: 20px;
+}
+section dt, section dd{
+    line-height: 30px;
+}
+aside {
+    clear:both;
+    background-color: greenyellow;
+    width: 80%;
+    margin:0 auto; /*이것도 가운데 정렬과 똑같다*/
+    padding: 10px;
+}
+aside li{
+    line-height: 30px;
+}
+footer {
+    clear:both;
+    background-color: black;
+    width: 80%;
+    height: 50px;
+    margin-left: auto; /*글자가 아닐떄는 이렇게 가운데 정렬*/
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+    color: gray;
+}
+
