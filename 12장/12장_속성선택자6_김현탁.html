@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>속성 선택자3 - 김현탁</title>
+    <title>속성 선택자6 - 김현탁</title>
     <style>
         ul{
             list-style: none;
@@ -30,14 +30,23 @@
             border: 2px solid black;
             box-shadow: rgba(0,0,0,0.4) 5px 5px;
         }
+
+        a[href $="hwp"]{ /*$=표시는 hwp 로 끝나는걸 지징하는것*/
+            background: url(images/hwp_icon.gif) no-repeat left center;
+            padding: 5px 25px; /*위아래 5 좌우 25 */
+        }
+
+        a[href $="xlsx"]{ /*$=표시는 xlsx 로 끝나는걸 지징하는것*/
+            background: url(images/excel_icon.gif) no-repeat left center;
+            padding: 5px 25px; /*위아래 5 좌우 25 */
+        }
     </style>
 </head>
 <body>
     <ul>
-        <li><a href="#">메뉴 1</a></li>
-        <li><a href="#">메뉴 2</a></li>
-        <li><a href="#" class="button">메뉴 3</a></li>
-        <li><a href="#" class="flat button">메뉴 4</a></li>
+        <h2>학과 소개 파일 다운로드</h2>
+        <li><a href="info.hwp">한글 파일</a></li>
+        <li><a href="info.xlsx">엑셀 파일</a></li>
     </ul>
 
 </body>
