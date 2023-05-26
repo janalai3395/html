@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 7 - 김현탁</title>
+    <style>
+      div{
+        width: 200px;
+        height: 200px;
+        
+      }
+      .container {
+        border: 1px solid black;
+        float: left; /* 가로로 정렬 */
+        perspective: 300px;
+        margin-top: 100px;
+        margin-left: 100px;
+      }
+
+      .box1{
+        background-color: aqua;
+        transform:rotateY(45deg);
+        -webkit-transform: rotateY(45deg);
+        -moz-transform: rotateY(45deg);
+        -o-transform: rotateY(45deg);
+        -ms-transform: rotateY(45deg);
+      }
+      .box2{
+        background-color: blueviolet;
+        transform:rotateX(45deg); /* 45도 회전*/
+        -webkit-transform: rotateX(45deg);
+        -moz-transform: rotateX(45deg);
+        -o-transform: rotateX(45deg);
+        -ms-transform: rotateX(45deg);
+        -webkit-transform-origin: left top; /*왼쪽 위를 기준으로*/
+        -ms-transform-origin: left top;
+        -moz-transform-origin: left top;
+        -o-transform-origin: left top;
+        transform-origin: left top;
+      }
+
+      #tr-style1 {
+        -webkit-transform-style: flat;
+        -ms-transform-style: flat;
+        -moz-transform-style: flat;
+        -o-transform-style: flat;
+        transform-style: flat;
+      }
+
+      #tr-style2 {
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+      }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1" id="tr-style1">
+            <div class="box2"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box1" id="tr-style2">
+         <div class="box2"></div>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
